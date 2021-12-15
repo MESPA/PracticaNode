@@ -12,7 +12,7 @@ exports.newclients = async (req,res,next) => {
         res.json({message : 'Add Fine'})
     } catch (error) {
         
-        console.log(error)
+       res.json(error)
         next();
     }
  

@@ -39,6 +39,12 @@ module.exports = function(){
 
        router.get('/pedidos',pedidosController.seepedidos)
 
+       router.get('/pedidos/:idPedidos',pedidosController.seepedido)
+
+       router.put('/pedidos/:idPedidos',pedidosController.updatepedido)
+
+       router.delete('/pedidos/:idPedidos',pedidosController.deletepedido)
+
        
     return router;
 }

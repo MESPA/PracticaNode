@@ -4,6 +4,9 @@ const routes = require('./routes')
 
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+// importar cors
+const cors = require('cors')
+
 //conectar mongo
 
 mongoose.Promise = global.Promise;
@@ -12,6 +15,9 @@ mongoose.connect('mongodb://localhost/Restapi', {
 })
 //iniciando app
 const app = express();
+
+//habilitar cors
+app.use(cors());
 
 //habilirtar bodyParser
 
