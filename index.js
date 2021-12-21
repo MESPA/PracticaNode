@@ -26,5 +26,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 //routes
 app.use('/', routes())
 
+//carpeta de imagenes publicas
+app.use(express.static('uploads'));
+
 //salida
 app.listen(5000)
